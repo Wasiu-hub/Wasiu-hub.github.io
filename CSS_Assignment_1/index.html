@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <h1>Gems - Job Application</h1>
+        <blockquote class="quote">
+          “Success usually comes to those who are too busy to be looking for
+          it.” – Henry David Thoreau
+        </blockquote>
+      </header>
+
+      <!-- NAVIGATION -->
+      <nav>
+        <a href="#form">Application Form</a> |
+        <a href="#details">Job Details</a> |
+        <a href="#extra">Additional Info</a>
+      </nav>
+
+      <!-- MAIN SECTION -->
+      <section id="details">
+        <article>
+          <h2>Job Role: Drilling Engineer</h2>
+          <p>Join our innovative team to build highly productive oil wells.</p>
+        </article>
+        <aside>
+          <p>
+            <strong>Tip:</strong> Highlight your best projects in the cover
+            letter.
+          </p>
+        </aside>
+      </section>
+
+      <!-- FORM SECTION -->
+      <section id="form" class="form-section">
+        <h2>Application Form</h2>
+
+        <!-- FORM STARTS HERE -->
+        <form
+          action="/submit"
+          method="POST"
+          autocomplete="on"
+          aria-label="Job Application Form"
+        >
+          <!-- TEXT INPUTS -->
+          <label
+            >Full Name:
+            <input
+              type="text"
+              name="fullname"
+              placeholder="Enter your full name"
+              required
+              minlength="3"
+              maxlength="50"
+            />
+          </label>
+
+          <label
+            >Email:
+            <input
+              type="text"
+              name="email"
+              placeholder="name@example.com"
+              pattern=".+@.+\..+"
+              required
+            />
+          </label>
+
+          <!-- PASSWORD FIELD -->
+          <label
+            >Password:
+            <input type="password" name="password" required />
+          </label>
+
+          <!-- NUMBER INPUT -->
+          <label
+            >Years of Experience:
+            <input type="number" name="experience" min="0" max="40" />
+          </label>
+
+          <!-- RANGE SLIDER -->
+          <label
+            >Expected Salary (£):
+            <input
+              type="range"
+              name="salary"
+              min="20000"
+              max="100000"
+              step="500"
+            />
+          </label>
+
+          <!-- CHECKBOXES -->
+          <p>Job Preferences:</p>
+          <label
+            ><input type="checkbox" name="remote" value="yes" /> Remote
+            Work</label
+          >
+          <label
+            ><input type="checkbox" name="fulltime" value="yes" />
+            Full-Time</label
+          >
+          <label
+            ><input type="checkbox" name="onsite" value="yes" /> On-Site</label
+          >
+
+          <!-- RADIO BUTTONS -->
+          <p>Job Type:</p>
+          <label
+            ><input type="radio" name="jobtype" value="full" required />
+            Full-Time</label
+          >
+          <label
+            ><input type="radio" name="jobtype" value="part" /> Part-Time</label
+          >
+
+          <!-- DROPDOWN MENU -->
+          <label
+            >Position Applying For:
+            <select name="position">
+              <option value="junior">Junior Developer</option>
+              <option value="senior">Senior Developer</option>
+              <option value="designer">UI/UX Designer</option>
+            </select>
+          </label>
+
+          <!-- DATALIST -->
+          <label
+            >Preferred City:
+            <input list="cities" name="city" />
+            <datalist id="cities">
+              <option value="London"></option>
+              <option value="Manchester"></option>
+              <option value="Birmingham"></option>
+              <option value="Leeds"></option>
+            </datalist>
+          </label>
+
+          <!-- TEXTAREA -->
+          <label
+            >Cover Letter:
+            <textarea
+              name="cover"
+              rows="5"
+              cols="40"
+              placeholder="Write your cover letter here..."
+            ></textarea>
+          </label>
+
+          <!-- DISABLED & READONLY -->
+          <label
+            >Referral Code (Readonly):
+            <input type="text" value="REF2025" readonly />
+          </label>
+
+          <label
+            >Promo Code (Disabled):
+            <input type="text" value="PROMO123" disabled />
+          </label>
+
+          <!-- SUBMIT BUTTON -->
+          <input type="submit" value="Send" />
+        </form>
+      </section>
+
+      <!-- EMBED SECTION -->
+      <section id="extra">
+        <h2>Gems Media</h2>
+        <embed src="gemsLogo.jpeg" width="400" height="300" />
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <p>&copy; 2025 DreamTech Industries</p>
+      </footer>
+    </div>
+  </body>
+</html>

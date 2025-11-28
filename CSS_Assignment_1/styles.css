@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This ruleset styles all h1 elements with a specific font and color */
+h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* This ruleset styles all form elements with a clean background and padding */
+form {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* This ruleset styles all paragraph elements with consistent spacing */
+p {
+  font-family: "Georgia", serif;
+  font-size: 1rem;
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* This ruleset styles the form section with specific layout and background */
+.form-section {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border: 2px solid #bdc3c7;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+/* This is an ID selector targeting the main title with specific styling */
+#main-title {
+  color: #e74c3c !important; /* Using !important to override other styles */
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* ===== MULTIPLE CLASS SELECTORS ===== */
+/* This ruleset uses multiple class selectors to apply bold green text */
+.green.bold {
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* This ruleset targets input elements with type containing 'text' */
+input[type*="text"] {
+  border: 2px solid #3498db;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* This ruleset targets images with 'winter' in their src attribute */
+img[src*="winter"] {
+  border: 3px solid #2c3e50;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+
+/* This ruleset styles labels within form elements */
+.form-section label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* This ruleset styles list items within main-list */
+.main-list li {
+  list-style-type: square;
+  margin-left: 1.5rem;
+  color: #7f8c8d;
+}
+
+/* This ruleset applies consistent styling to headings and menu */
+h1,
+h2,
+.menu {
+  font-family: "Helvetica", sans-serif;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* This ruleset targets h1 elements with class 'title' */
+h1.title {
+  background-color: #34495e;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+/* Focus state for form inputs */
+input:focus {
+  outline: none;
+  border-color: #e74c3c;
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}
+
+/* Style for disabled inputs */
+input:disabled {
+  background-color: #ecf0f1;
+  color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Visited link styling */
+a:visited {
+  color: #8e44ad;
+}
+
+/* Active state for buttons */
+input[type="submit"]:active {
+  transform: scale(0.98);
+  background-color: #c0392b;
+}
+
+/* Margin examples */
+header {
+  margin: 2rem 0;
+}
+
+nav {
+  margin: 1rem 0;
+}
+
+/* Margin shorthand example */
+.quote {
+  margin: 6px 11px 4px 9px;
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+/* Padding examples */
+.container {
+  padding: 2rem;
+}
+
+/* Padding shorthand example */
+.form-section {
+  padding: 6px 10px 5px 12px;
+}
+
+/* Auto margin for centering */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Border examples */
+aside {
+  border: 2px solid #f39c12;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* Border radius for rounded corners */
+input,
+select,
+textarea {
+  border-radius: 4px;
+}
+
+/* Width and height examples */
+embed {
+  width: 400px;
+  height: 300px;
+  margin: 1rem 0;
+}
+
+/* Min and max width examples */
+body {
+  min-width: 320px;
+  max-width: 100%;
+}
+
+/* Min and max height examples */
+.form-section {
+  min-height: 300px;
+  max-height: none;
+}
+
+/* Overflow example */
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+/* Individual margin properties */
+footer {
+  margin-top: 3rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  text-align: center;
+}
+
+/* Individual padding properties */
+blockquote {
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  background-color: #ecf0f1;
+  border-left: 4px solid #3498db;
+}
+
+/* Visibility example */
+/* This is a visibility property used to hide a promotional section */
+.promo {
+  visibility: hidden;
+  height: 0;
+}
+
+/* ===== VISUAL RULES ===== */
+/* Font family examples */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Font size examples */
+h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+}
+
+/* Color examples */
+nav a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+/* Background color examples */
+body {
+  background-color: #ecf0f1;
+}
+
+/* Text align examples */
+footer p {
+  text-align: center;
+  color: #7f8c8d;
+}
+
+/* Opacity example */
+.quote {
+  opacity: 0.8;
+}
+
+/* Background image example */
+header {
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* !important override example */
+.special-text {
+  color: #e74c3c !important;
+  font-weight: bold;
+}
+
+/* ===== ADDITIONAL STYLING FOR BETTER VISUAL APPEARANCE ===== */
+/* Form element styling */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #bdc3c7;
+  font-size: 1rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #219a52;
+}
+
+/* Navigation styling */
+nav {
+  text-align: center;
+  padding: 1rem;
+  background-color: #34495e;
+  border-radius: 5px;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+/* Section styling */
+section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+  padding: 1rem;
+}
+
+embed {
+  width: 100%;
+  height: auto;
+}
