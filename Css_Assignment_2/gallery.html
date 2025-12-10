@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery | Gallery</title>
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Art Gallery</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Gallery Introduction -->
+        <section class="gallery-intro">
+            <h2>Art Gallery Collection</h2>
+            <p class="lead">Browse our complete collection of artworks. Click on any image to learn more about the piece and the artist.</p>
+            
+            <!-- Typography demonstration -->
+            <div class="typography-demo">
+                <h3>Typography in Art Descriptions</h3>
+                <p class="font-demo-1">This text uses Playfair Display with Raleway fallback (font-family property).</p>
+                <p class="font-demo-2">This text demonstrates different font weights: <span class="light">light (300)</span>, <span class="normal">normal (400)</span>, and <span class="bold">bold (600 or 700)</span>.</p>
+                <p class="font-demo-3">This text shows <span class="italic">italic font-style</span> and <span class="uppercase">text-transform uppercase</span>.</p>
+                <p class="spacing-demo">This text demonstrates letter-spacing, word-spacing, and line-height properties for better readability in art descriptions.</p>
+            </div>
+        </section>
+
+        <!-- Gallery Container -->
+        <div class="gallery-container">
+            <h3 class="gallery-title">Featured Artworks</h3>
+            
+            <!-- This element uses fixed positioning -->
+            <div class="gallery-notice">
+                <p>Gallery open daily until 8pm</p>
+            </div>
+            
+            <!-- This element uses sticky positioning -->
+            <div class="filter-options">
+                <h4>Filter by Medium:</h4>
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Painting</button>
+                <button class="filter-btn">Sculpture</button>
+                <button class="filter-btn">Photography</button>
+                <button class="filter-btn">Digital</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Artwork 1 -->
+                <div class="artwork">
+                    <!-- This image uses inline-block display -->
+                    <div class="artwork-img-container">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Abstract painting" class="artwork-img">
+                        <!-- This label uses absolute positioning */
+                        <div class="artwork-label">New</div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4>Abstract Dreams</h4>
+                        <p class="artist">By Maria Chen</p>
+                        <p class="medium">Mixed media on canvas, 2023</p>
+                        <p class="description">A vibrant exploration of color and form that challenges traditional perspectives.</p>
+                    </div>
+                </div>
+                
+                <!-- Artwork 2 -->
+                <div class="artwork">
+                    <div class="artwork-img-container">
+                        <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Landscape painting" class="artwork-img">
+                    </div>
+                    <div class="artwork-info">
+                        <h4>Mountain Sunset</h4>
+                        <p class="artist">By Robert Johnson</p>
+                        <p class="medium">Oil on canvas, 2022</p>
+                        <p class="description">Capturing the fleeting beauty of dusk in the Appalachian mountains.</p>
+                    </div>
+                </div>
+                
+                <!-- Artwork 3 -->
+                <div class="artwork">
+                    <div class="artwork-img-container">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Modern sculpture" class="artwork-img">
+                    </div>
+                    <div class="artwork-info">
+                        <h4>Urban Form</h4>
+                        <p class="artist">By Alejandro Ruiz</p>
+                        <p class="medium">Bronze sculpture, 2021</p>
+                        <p class="description">An exploration of geometric forms inspired by city architecture.</p>
+                    </div>
+                </div>
+                
+                <!-- Artwork 4 -->
+                <div class="artwork">
+                    <div class="artwork-img-container">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Portrait painting" class="artwork-img">
+                        <div class="artwork-label">Sold</div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4>Contemplation</h4>
+                        <p class="artist">By Sofia Petrov</p>
+                        <p class="medium">Acrylic on canvas, 2023</p>
+                        <p class="description">A intimate portrait exploring themes of introspection and identity.</p>
+                    </div>
+                </div>
+                
+                <!-- Artwork 5 -->
+                <div class="artwork">
+                    <div class="artwork-img-container">
+                        <img src="https://images.unsplash.com/photo-1543857778-c4a1a569e388?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Modern art" class="artwork-img">
+                    </div>
+                    <div class="artwork-info">
+                        <h4>Color Fields</h4>
+                        <p class="artist">By Jamal Washington</p>
+                        <p class="medium">Digital print, 2023</p>
+                        <p class="description">Bold color blocks that play with perception and spatial relationships.</p>
+                    </div>
+                </div>
+                
+                <!-- Artwork 6 -->
+                <div class="artwork">
+                    <div class="artwork-img-container">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Sculpture detail" class="artwork-img">
+                    </div>
+                    <div class="artwork-info">
+                        <h4>Organic Forms</h4>
+                        <p class="artist">By Liam O'Connor</p>
+                        <p class="medium">Marble sculpture, 2020</p>
+                        <p class="description">Fluid shapes carved from Carrara marble, inspired by natural erosion.</p>
+                    </div>
+                </div>
+                
+                <!-- Artwork 7 -->
+                <div class="artwork">
+                    <div class="artwork-img-container">
+                        <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Photography" class="artwork-img">
+                    </div>
+                    <div class="artwork-info">
+                        <h4>Urban Geometry</h4>
+                        <p class="artist">By Chloe Williams</p>
+                        <p class="medium">Archival pigment print, 2023</p>
+                        <p class="description">Architectural photography highlighting geometric patterns in cityscapes.</p>
+                    </div>
+                </div>
+                
+                <!-- Artwork 8 -->
+                <div class="artwork">
+                    <div class="artwork-img-container">
+                        <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Abstract art" class="artwork-img">
+                        <div class="artwork-label">Featured</div>
+                    </div>
+                    <div class="artwork-info">
+                        <h4>Chaos and Order</h4>
+                        <p class="artist">By Yuki Tanaka</p>
+                        <p class="medium">Ink and watercolor, 2022</p>
+                        <p class="description">A balance between controlled brushstrokes and spontaneous ink flows.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- This element uses float and clear properties -->
+            <div class="gallery-sidebar">
+                <h4>Gallery Notes</h4>
+                <p>All artworks are available for purchase unless marked as "Sold".</p>
+                <p>Commission requests can be arranged with the artists.</p>
+                <p>Monthly exhibitions change on the first Friday of each month.</p>
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+        
+        <!-- Visit Information -->
+        <section class="visit-info">
+            <h3>Plan Your Visit</h3>
+            <p>Our gallery is located in the heart of the arts district. We recommend allowing at least one hour to fully experience the collection.</p>
+            <p>Guided tours are available on Saturdays at 2pm and 4pm.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@artgallery.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Art Street, Creative City</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday-Friday: 10am-6pm</p>
+                    <p>Saturday: 11am-8pm</p>
+                    <p>Sunday: 12pm-5pm</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2023 Art Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
